@@ -1,0 +1,46 @@
+C:\AWS>aws ec2 describe-images --region us-east-2 --image-ids ami-0ff39345bd62c82a5 --output json
+{
+    "Images": [
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2022-12-06T03:27:38.000Z",
+            "ImageId": "ami-0ff39345bd62c82a5",
+            "ImageLocation": "amazon/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20221206",
+            "ImageType": "machine",
+            "Public": true,
+            "OwnerId": "099720109477",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-02403da35b25287f6",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    }
+                },
+                {
+                    "DeviceName": "/dev/sdb",
+                    "VirtualName": "ephemeral0"
+                },
+                {
+                    "DeviceName": "/dev/sdc",
+                    "VirtualName": "ephemeral1"
+                }
+            ],
+            "Description": "Canonical, Ubuntu, 22.04 LTS, amd64 jammy image build on 2022-12-06",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20221206",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        }
+    ]
+}
+
+C:\AWS>

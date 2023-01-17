@@ -1,0 +1,18 @@
+C:\AWS>terraform output -json
+{
+  "instance_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "i-0312ca36b392a932b"
+  },
+  "instance_private_ips": {
+    "sensitive": false,
+    "type": "string",
+    "value": "172.31.6.4"
+  },
+  "instance_public_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "18.118.255.26"
+  }
+}
